@@ -130,7 +130,9 @@ border-radius: 2px;
 }
 
 .header-tel {
-  display: block;
+  display: flex;
+  gap: 10px;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -142,8 +144,11 @@ border-radius: 2px;
   transition: color var(--duration) var(--function)
 }
 
+
 .header-mail {
-  display: block;
+  display: flex;
+  gap: 10px;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -152,26 +157,18 @@ border-radius: 2px;
   text-decoration: none;
   padding-top: 32px;
   padding-bottom: 32px;
-    transition: color var(--duration) var(--function)
-}
+  transition: color var(--duration) var(--function)
 
-.envelope,
-.smartphone {
-  fill: var(--text-color);
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  transition: fill var(--duration) var(--function)
-}
+  }
 
-.envelope:hover,
-.envelope:focus {
-  fill: var(--second-color);
-}
 
 .header-mail:hover,
 .header-mail:focus {
   color: var(--second-color);
+}
+
+.envelope-icon, .smartphone-icon{
+  fill: currentColor;
 }
 
 .smartphone:hover,
@@ -345,6 +342,9 @@ border-radius: 2px;
 }
 
 .services-text-block{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   background: rgba(47, 48, 58, 0.8);
   border: 1px solid #000000;
@@ -355,7 +355,6 @@ border-radius: 2px;
   }
 
   .services-text{
-    padding: 27px 107px;
       font-weight: 700;
       font-size: 14px;
       line-height: 1.14;
@@ -678,8 +677,8 @@ transition: fill var(--duration) var(--function)
   padding: 63px 24px;
   background-color: rgba(33, 150, 243, 0.9);;
   transform: translateY(100%);
-    transition: transform var(--duration) var(--function);
-  overflow: auto;  
+  transition: transform var(--duration) var(--function);
+  overflow: hidden;  
 }
 
 .content-wrap{
